@@ -2458,8 +2458,14 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
-  <TD>fnsnsplit</TD>
+  <TD ROWSPAN="2">fnsnsplit</TD>
   <TD>~ fnsnsplitss</TD>
+  <TD>Subset rather than equality, for a function on any set.</TD>
+</TR>
+
+<TR>
+  <TD>~ fnsnsplitdc</TD>
+  <TD>For a function on a set with decidable equality.</TD>
 </TR>
 
 <TR>
@@ -2470,8 +2476,14 @@ and is evaluated at a set</TD>
 </TR>
 
 <TR>
-  <TD>funresdfunsn</TD>
+  <TD ROWSPAN="2">funresdfunsn</TD>
   <TD>~ funresdfunsnss</TD>
+  <TD>Subset rather than equality, for a function on any set.</TD>
+</TR>
+
+<TR>
+  <TD>~ funresdfunsndc</TD>
+  <TD>For a function on a set with decidable equality.</TD>
 </TR>
 
 <TR>
@@ -8367,7 +8379,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>setsidvald</TD>
-  <TD>~ setsssvald</TD>
+  <TD>~ strsetsid</TD>
 </TR>
 
 <TR>
@@ -8407,42 +8419,42 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>strfvd</TD>
-  <TD>~ strnfvd</TD>
+  <TD>~ strslfvd</TD>
 </TR>
 
 <TR>
   <TD>strfv2d</TD>
-  <TD>~ strnfv2d</TD>
+  <TD>~ strslfv2d</TD>
 </TR>
 
 <TR>
   <TD>strfv2</TD>
-  <TD>~ strnfv2</TD>
+  <TD>~ strslfv2</TD>
 </TR>
 
 <TR>
   <TD>strfv</TD>
-  <TD>~ strnfv</TD>
+  <TD>~ strslfv</TD>
 </TR>
 
 <TR>
   <TD>strfv3</TD>
-  <TD>~ strnfv3</TD>
+  <TD>~ strslfv3</TD>
 </TR>
 
 <TR>
   <TD>strssd</TD>
-  <TD>~ strnssd</TD>
+  <TD>~ strslssd</TD>
 </TR>
 
 <TR>
   <TD>strss</TD>
-  <TD>~ strnss</TD>
+  <TD>~ strslss</TD>
 </TR>
 
 <TR>
   <TD>str0</TD>
-  <TD>~ strn0</TD>
+  <TD>~ strsl0</TD>
 </TR>
 
 <TR>
@@ -8454,12 +8466,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>setsid</TD>
-  <TD>~ setsidn</TD>
+  <TD>~ setsslid</TD>
 </TR>
 
 <TR>
   <TD>setsnid</TD>
-  <TD>~ setsnidn</TD>
+  <TD>~ setsslnid</TD>
 </TR>
 
 <TR>
@@ -8537,6 +8549,41 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on ressress but at first glance this would
   appear to be feasible given the ` B C_ A ` condition.</TD>
+</TR>
+
+<TR>
+  <TD>strle1</TD>
+  <TD>~ strle1g</TD>
+</TR>
+
+<TR>
+  <TD>strle2</TD>
+  <TD>~ strle2g</TD>
+</TR>
+
+<TR>
+  <TD>strle3</TD>
+  <TD>~ strle3g</TD>
+</TR>
+
+<TR>
+  <TD>1strstr</TD>
+  <TD>~ 1strstrg</TD>
+</TR>
+
+<TR>
+  <TD>2strstr</TD>
+  <TD>~ 2strstrg</TD>
+</TR>
+
+<TR>
+  <TD>2strbas</TD>
+  <TD>~ 2strbasg</TD>
+</TR>
+
+<TR>
+  <TD>2strop</TD>
+  <TD>~ 2stropg</TD>
 </TR>
 
 <TR>
