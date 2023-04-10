@@ -1088,6 +1088,11 @@ elimination.</TD>
 </TR>
 
 <TR>
+  <TD>nsyl4</TD>
+  <TD>~ con1dc</TD>
+</TR>
+
+<TR>
 <TD>pm2.61 , pm2.61d , pm2.61d1 , pm2.61d2 , pm2.61i , pm2.61ii , pm2.61nii ,
 pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61ne ,
 pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
@@ -1159,6 +1164,16 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 </TR>
 
 <TR>
+  <TD>pm4.52</TD>
+  <TD>~ pm4.52im</TD>
+</TR>
+
+<TR>
+  <TD>pm4.53</TD>
+  <TD>~ pm4.53r</TD>
+</TR>
+
+<TR>
   <TD>pm5.17</TD>
   <TD>~ xorbin</TD>
   <TD>The combination of ~ df-xor and ~ xorbin is the forward direction
@@ -1168,6 +1183,12 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 <TR>
 <TD>biluk</TD>
 <TD>~ bilukdc </TD>
+</TR>
+
+<TR>
+  <TD>biadan</TD>
+  <TD>~ biadani</TD>
+  <TD>The set.mm proof of biadan depends on biluk</TD>
 </TR>
 
 <TR>
@@ -1475,8 +1496,55 @@ is double negation elimination.</TD>
 </TR>
 
 <TR>
+  <TD>df-symdif , dfsymdif2</TD>
+  <TD>~ symdifxor</TD>
+  <TD>The symmetric difference notation and a number of
+  the theorems could be brought over from set.mm.</TD>
+</TR>
+
+<TR>
   <TD>dfss4</TD>
   <TD>~ ssddif , ~ dfss4st</TD>
+</TR>
+
+<TR>
+  <TD>dfun3</TD>
+  <TD>~ unssin</TD>
+</TR>
+
+<TR>
+  <TD>dfin3</TD>
+  <TD>~ inssun</TD>
+</TR>
+
+<TR>
+  <TD>dfin4</TD>
+  <TD>~ inssddif</TD>
+</TR>
+
+<TR>
+  <TD>unineq</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>difindi</TD>
+  <TD>~ difindiss</TD>
+</TR>
+
+<TR>
+  <TD>difdif2</TD>
+  <TD>~ difdif2ss</TD>
+</TR>
+
+<TR>
+  <TD>indm</TD>
+  <TD>~ indmss</TD>
+</TR>
+
+<TR>
+  <TD>undif3</TD>
+  <TD>~ undif3ss</TD>
 </TR>
 
 <TR>
@@ -1768,14 +1836,75 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-  <TD>sssn</TD>
-  <TD>~ sssnr , ~ sssnm</TD>
+  <TD>pwpw0</TD>
+  <TD>~ pwpw0ss</TD>
+</TR>
+
+<TR>
+  <TD ROWSPAN="3">sssn</TD>
+  <TD>~ sssnr</TD>
+  <TD>One direction, for any classes.</TD>
+</TR>
+
+<TR>
+  <TD>~ sssnm</TD>
+  <TD>When the subset is inhabited.</TD>
+</TR>
+
+<TR>
+  <TD><I>for all sets</I></TD>
+  <TD>Equivalent to excluded middle by ~ exmidsssn .</TD>
+</TR>
+
+<TR>
+  <TD>ssunsn2 , ssunsn</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>eqsn</TD>
+  <TD>~ eqsnm</TD>
+</TR>
+
+<TR>
+  <TD>ssunpr</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>sspr</TD>
+  <TD>~ ssprr</TD>
+</TR>
+
+<TR>
+  <TD>sstp</TD>
+  <TD>~ sstpr</TD>
+</TR>
+
+<TR>
+  <TD>prnebg</TD>
+  <TD><I>none</I></TD>
 </TR>
 
 <TR>
   <TD>pwsn</TD>
   <TD>~ pwsnss</TD>
   <TD>Also see ~ exmidpw</TD>
+</TR>
+
+<TR>
+  <TD>pwpr</TD>
+  <TD>~ pwprss</TD>
+</TR>
+
+<TR>
+  <TD>pwtp</TD>
+  <TD>~ pwtpss</TD>
+</TR>
+
+<TR>
+  <TD>pwpwpw0</TD>
+  <TD>~ pwpwpw0ss</TD>
 </TR>
 
 <TR>
@@ -2724,6 +2853,12 @@ that we are evaluating functions within their domains.
 </TR>
 
 <TR>
+  <TD>relmptopab</TD>
+  <TD><I>none</I></TD>
+  <TD>Presumably would need a condition that ` B e. dom F `</TD>
+</TR>
+
+<TR>
 <TD>ofval</TD>
 <TD>~ fnofval </TD>
 </TR>
@@ -2974,6 +3109,18 @@ hasn't been a need for it.</TD>
 <TD>2ndnpr</TD>
 <TD><I>none</I></TD>
 <TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+  <TD>ovmptss</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fvmptss</TD>
+</TR>
+
+<TR>
+  <TD>relmpt2opab</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ovmptss</TD>
 </TR>
 
 <TR>
@@ -5303,9 +5450,7 @@ favor of theorems in deduction form.</TD>
   <TD>sup2 , sup3 , sup3ii</TD>
   <TD><I>none</I></TD>
   <TD>We won't be able to have the least upper bound property for all
-  nonempty bounded sets. In cases where we can show that the supremum
-  exists, we might be able to prove slightly different ways of stating
-  there is a supremum.</TD>
+  inhabited bounded sets, as shown at ~ sup3exmid .</TD>
 </TR>
 
 <TR>
@@ -8311,55 +8456,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>algr0</TD>
   <TD>~ ialgr0</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algrf</TD>
-  <TD>~ ialgrf</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algrp1</TD>
-  <TD>~ ialgrp1</TD>
-  <TD>Several hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>alginv</TD>
-  <TD>~ ialginv</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algcvg</TD>
-  <TD>~ ialgcvg</TD>
-  <TD>` seq ` as defined in ~ df-iseq has an additional argument</TD>
-</TR>
-
-<TR>
-  <TD>algcvga</TD>
-  <TD>~ ialgcvga</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>algfx</TD>
-  <TD>~ ialgfx</TD>
-  <TD>Two hypotheses are tweaked or added to reflect differences in how
-  ` seq ` works</TD>
-</TR>
-
-<TR>
-  <TD>eucalg</TD>
-  <TD>~ eucialg</TD>
-  <TD>Tweaked for the different ` seq ` syntax</TD>
+  <TD>The ` F : S --> S ` hypothesis is added (related theorems
+  already have that hypothesis).</TD>
 </TR>
 
 <TR>
@@ -8961,6 +9059,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>df-mre , df-mrc and all theorems using the Moore or mrCls syntax</TD>
+  <TD><I>none</I></TD>
+  <TD>The closest we have currently is ~ df-cls but even that
+  doesn't function as it does in set.mm (because complements
+  are different without excluded middle).</TD>
+</TR>
+
+<TR>
   <TD>istop2g</TD>
   <TD>~ istopfin</TD>
 </TR>
@@ -9003,6 +9109,419 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
+  <TD>tpsprop2d</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof does not work as-is.  Unused in set.mm</TD>
+</TR>
+
+<TR>
+  <TD>basdif0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on undif1</TD>
+</TR>
+
+<TR>
+  <TD>0top</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on sssn</TD>
+</TR>
+
+<TR>
+  <TD>en2top</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on strict dominance</TD>
+</TR>
+
+<TR>
+  <TD>2basgen</TD>
+  <TD>~ 2basgeng</TD>
+</TR>
+
+<TR>
+  <TD>tgdif0</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle</TD>
+</TR>
+
+<TR>
+  <TD>indistopon</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on sspr</TD>
+</TR>
+
+<TR>
+  <TD>indistop , indisuni</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on indistopon</TD>
+</TR>
+
+<TR>
+  <TD>fctop</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have
+  including con1d , ssfi , unfi , rexnal , and difindi .</TD>
+</TR>
+
+<TR>
+  <TD>fctop2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on fctop</TD>
+</TR>
+
+<TR>
+  <TD>cctop</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have
+  including con1d , rexnal , and difindi .</TD>
+</TR>
+
+<TR>
+  <TD>ppttop , pptbas</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on theorems we don't have
+  including orrd and ianor</TD>
+</TR>
+
+<TR>
+  <TD>indistpsx , indistps , indistps2 , indistpsALT , indistps2ALT</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on indiscrete topology theorems we don't
+  have</TD>
+</TR>
+
+<TR>
+  <TD>isopn2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4</TD>
+</TR>
+
+<TR>
+  <TD>opncld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isopn2</TD>
+</TR>
+
+<TR>
+  <TD>iincld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>intcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iincld</TD>
+</TR>
+
+<TR>
+  <TD>incld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on intcld</TD>
+</TR>
+
+<TR>
+  <TD>riincld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on iincld , incld , and case elimination</TD>
+</TR>
+
+<TR>
+  <TD>clscld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on intcld</TD>
+</TR>
+
+<TR>
+  <TD>clsf</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>clsval2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and opncld</TD>
+</TR>
+
+<TR>
+  <TD>ntrval2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and clsval2</TD>
+</TR>
+
+<TR>
+  <TD>ntrdif , clsdif</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>cmclsopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on dfss4 and clsval2</TD>
+</TR>
+
+<TR>
+  <TD>cmntrcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>iscld3 , iscld4</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>clsidm</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>0ntr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ssdif0</TD>
+</TR>
+
+<TR>
+  <TD>elcls , elcls2</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>clsndisj</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>elcls3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>opncldf1 , opncldf2 , opncldf3</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on dfss4 and opncld</TD>
+</TR>
+
+<TR>
+  <TD>isclo</TD>
+  <TD><I>none</I></TD>
+  <TD>One direction of the biconditional may be provable by
+  taking the set.mm proof and replacing undif with ~ undifss</TD>
+</TR>
+
+<TR>
+  <TD>isclo2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on isclo</TD>
+</TR>
+
+<TR>
+  <TD>indiscld</TD>
+  <TD><I>none</I></TD>
+  <TD>Something along these lines may be possible once we
+  define the indiscrete topology</TD>
+</TR>
+
+<TR>
+  <TD>neips</TD>
+  <TD>~ neipsm</TD>
+</TR>
+
+<TR>
+  <TD>neindisj</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clsndisj</TD>
+</TR>
+
+<TR>
+  <TD>opnnei</TD>
+  <TD><I>none</I></TD>
+  <TD>Apparently the set.mm proof could easily be adapted for
+  the case in which ` S ` is inhabited</TD>
+</TR>
+
+<TR>
+  <TD>neindisj2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on elcls</TD>
+</TR>
+
+<TR>
+  <TD>neipeltop , neiptopuni , neiptoptop , neiptopnei , neiptopreu</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proofs rely on several theorems we do not have.</TD>
+</TR>
+
+<TR>
+  <TD>df-lp and all theorems using the limPt syntax</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>df-perf and all theorems using the Perf syntax</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>restbas</TD>
+  <TD>~ restbasg</TD>
+</TR>
+
+<TR>
+  <TD>restsn2</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on topsn</TD>
+</TR>
+
+<TR>
+  <TD>restcld</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on opncld</TD>
+</TR>
+
+<TR>
+  <TD>restcldi</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on restcld</TD>
+</TR>
+
+<TR>
+  <TD>restcldr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on restcld</TD>
+</TR>
+
+<TR>
+  <TD>restfpw</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on ssfi</TD>
+</TR>
+
+<TR>
+  <TD>neitr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on inundif</TD>
+</TR>
+
+<TR>
+  <TD>restcls</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on clscld</TD>
+</TR>
+
+<TR>
+  <TD>restntr</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on excluded middle</TD>
+</TR>
+
+<TR>
+  <TD>resstopn</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resstset</TD>
+</TR>
+
+<TR>
+  <TD>resstps</TD>
+  <TD><I>none</I></TD>
+  <TD>The set.mm proof relies on resstopn</TD>
+</TR>
+
+<TR>
+  <TD>lmrel</TD>
+  <TD>~ lmreltop</TD>
+</TR>
+
+<TR>
+  <TD>iscnp2</TD>
+  <TD>~ iscnp</TD>
+</TR>
+
+<TR>
+  <TD>cnptop1 , cnptop2</TD>
+  <TD><I>none</I></TD>
+</TR>
+
+<TR>
+  <TD>cnprcl</TD>
+  <TD>~ cnprcl2k</TD>
+</TR>
+
+<TR>
+  <TD>cnpf , cnpcl</TD>
+  <TD>~ cnpf2</TD>
+</TR>
+
+<TR>
+  <TD>cnprcl2</TD>
+  <TD>~ cnprcl2k</TD>
+</TR>
+
+<TR>
+  <TD>cnpimaex</TD>
+  <TD>~ icnpimaex</TD>
+</TR>
+
+<tr>
+  <td>cnpco</td>
+  <td>~ cnptopco</td>
+</tr>
+
+<tr>
+  <td>iscncl</td>
+  <TD><I>none</I></TD>
+  <td>The set.mm proof relies on opncld</td>
+</tr>
+
+<tr>
+  <td>cncls2i</td>
+  <TD><I>none</I></TD>
+  <td>The set.mm proof relies on clscld</td>
+</tr>
+
+<tr>
+  <td>cnclsi</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on cncls2i</td>
+</tr>
+
+<tr>
+  <td>cncls2</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on cncls2i and iscncl</td>
+</tr>
+
+<tr>
+  <td>cncls</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof relies on cncls2 and cnclsi</td>
+</tr>
+
+<tr>
+  <td>cncnp2</td>
+  <td>~ cncnp2m</td>
+</tr>
+
+<tr>
+  <td>cnpresti</td>
+  <td>~ cnptopresti</td>
+</tr>
+
+<tr>
+  <td>cnprest</td>
+  <td>~ cnptoprest</td>
+</tr>
+
+<tr>
+  <td>cnprest2</td>
+  <td>~ cnptoprest2</td>
+</tr>
+
+<TR>
   <TD>divccncf</TD>
   <TD>~ divccncfap</TD>
 </TR>
@@ -9030,6 +9549,13 @@ John Wiley &amp; Sons Inc. (1967) [QA300.A645 1967].</LI>
 accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
 the American Mathematical Society</I>, 54:481-498 (2017),
 DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
+
+<li><a name="BauerSwan"></a>[BauerSwan] Bauer, Andrej and Swan, Andrew,
+"Every Metric Space is Separable in Function Realizability",
+<i>Logical Methods in Computer Science</i>,
+Volume 15, Issue 2, 2019, pp. 14:1&#x2013;14:7,
+<a href="https://lmcs.episciences.org/5501/pdf">
+https://lmcs.episciences.org/5501/pdf</a></li>
 
 <LI><A NAME="BauerTaylor"></A> [BauerTaylor] Andrej Bauer and Paul Taylor,
 "The Dedekind Reals in Abstract Stone Duality",
